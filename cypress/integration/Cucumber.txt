@@ -1,0 +1,43 @@
+npm init -y
+npm i cypress@9.7.0
+npm install --save-dev cypress-cucumber-preprocessor
+
+cypress/plugins/index.js
+const cucumber = require('cypress-cucumber-preprocessor').default
+
+module.exports = (on, config) => {
+  on('file:preprocessor', cucumber())
+}
+
+
+cypress.json
+
+{
+  "testFiles": "**/*.feature"
+}
+
+
+package.json:
+
+"cypress-cucumber-preprocessor": {
+  "nonGlobalStepDefinitions": true
+}
+
+
+import { Then } from "cypress-cucumber-preprocessor/steps";
+
+
+cypress run --spec **/*.features
+
+
+{
+    "url":"https://www.automationexercise.com/",
+    "email":"automation01@gmail.com",
+    "password":"123456!a"
+}
+Logout
+ Delete Account
+  API Testing
+ Video Tutorials
+ Contact us
+ Logged in as Automation
