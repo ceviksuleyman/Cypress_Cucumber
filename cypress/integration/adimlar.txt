@@ -24,7 +24,7 @@ package.json:
 }
 
 
-import { Then } from "cypress-cucumber-preprocessor/steps";
+import { Then, Given, And, When } from "cypress-cucumber-preprocessor/steps";
 
 
 cypress run --spec **/*.features

@@ -4,3 +4,5 @@ Feature: AutoExercise Login Test
         When login link 
         Then email, password and sigin button
         And assert login
+
+        #feature file ile steplerin oldugu klasor ismi birebir ayni olmalidir !!1
